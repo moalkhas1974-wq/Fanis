@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="فانیس؛ چراغی برای انتخاب‌های بهتر">
+<title>فانیس | چراغی برای انتخاب‌های بهتر</title>
+<style>
+:root{--ink:#24372d;--green:#315b45;--gold:#b58b45;--cream:#f7f3e9;--paper:#fffdf8}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Tahoma,Arial,sans-serif;line-height:1.9}
+header{background:var(--paper);border-bottom:1px solid #e8dfce;padding:18px 6%;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:bold;font-size:1.35rem}.lantern{width:42px;height:48px;color:var(--gold)}
+nav a{color:var(--green);text-decoration:none;margin:0 10px;font-size:.95rem}
+.hero{padding:65px 7% 55px;background:linear-gradient(120deg,#e9eadb,#f7f3e9);text-align:center}
+.hero h1{font-size:clamp(2rem,5vw,3.4rem);margin:0 0 12px;color:var(--green)}
+.hero p{max-width:650px;margin:0 auto 22px;color:#536456}
+.btn{display:inline-block;background:var(--green);color:white;padding:10px 24px;border-radius:30px;text-decoration:none}
+main{max-width:1100px;margin:40px auto;padding:0 20px}
+.section-head{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+h2{color:var(--green)}input{font:inherit;border:1px solid #d9d0bf;border-radius:24px;padding:10px 16px;background:white;min-width:min(100%,260px)}
+.categories{display:flex;gap:10px;flex-wrap:wrap;margin:15px 0 25px}
+.chip{border:1px solid #d8c9ac;background:#fffdf8;color:var(--green);padding:7px 15px;border-radius:20px;cursor:pointer;font:inherit}
+.chip.active{background:var(--green);color:white}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:var(--paper);border:1px solid #eee5d5;border-radius:16px;padding:20px;box-shadow:0 5px 18px #30452b0b}
+.symbol{font-size:2rem;color:var(--gold)}.card h3{margin:5px 0;color:var(--green)}.card p{font-size:.92rem;color:#657166;min-height:55px}
+.card small{color:#9a7840}.soon{display:inline-block;margin-top:10px;color:#8a6b35;font-size:.88rem}
+.about{margin:45px 0;background:#e9eadf;padding:25px;border-radius:16px}
+footer{text-align:center;padding:25px;background:#263d30;color:#f8f3e8;font-size:.9rem}
+@media(max-width:600px){header{align-items:flex-start;flex-direction:column}nav a{margin-left:14px;margin-right:0}.hero{padding:45px 6%}}
+</style>
+</head>
+<body>
+<header>
+ <div class="brand">
+  <svg class="lantern" viewBox="0 0 64 72" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M23 8h18M27 8V3h10v5M20 15h24l5 9v30l-7 8H22l-7-8V24l5-9Z"/><path d="M18 25h28M18 51h28M32 25v26M25 15l-4 10m18-10 4 10M25 62v6h14v-6"/><path d="M32 30c-7 8-5 14 0 17 5-3 7-9 0-17Z" fill="#d6a64d" stroke="#b58b45"/></svg>
+  <span>فانیس</span>
+ </div>
+ <nav><a href="#products">محصولات</a><a href="#about">درباره فانیس</a></nav>
+</header>
+<section class="hero">
+ <h1>فانیس؛ چراغی برای انتخاب‌های بهتر</h1>
+ <p>پیش از خرید، آگاهانه‌تر انتخاب کن. در فانیس به‌دنبال معرفی و بررسی کالاهای کاربردی هستیم تا مسیر انتخاب برایت روشن‌تر شود.</p>
+ <a class="btn" href="#products">دیدن دسته‌بندی‌ها</a>
+</section>
+<main>
+ <section id="products">
+  <div class="section-head"><h2>ویترین فانیس</h2><input id="search" type="search" placeholder="جست‌وجوی محصول..." aria-label="جست‌وجوی محصول"></div>
+  <div class="categories" id="filters">
+   <button class="chip active" data-cat="all">همه</button><button class="chip" data-cat="digital">لوازم دیجیتال</button><button class="chip" data-cat="home">خانه و زندگی</button><button class="chip" data-cat="sport">ورزش</button><button class="chip" data-cat="care">مراقبت شخصی</button>
+  </div>
+  <div class="grid" id="grid">
+   <article class="card" data-cat="digital"><div class="symbol">🎧</div><small>لوازم دیجیتال</small><h3>هدفون و هندزفری بی‌سیم</h3><p>برای مکالمه، موسیقی و استفاده روزمره؛ پیش از خرید مشخصات و گارانتی را مقایسه کنید.</p><span class="soon">لینک خرید پس از اتصال همکاری در فروش</span></article>
+   <article class="card" data-cat="digital"><div class="symbol">🔌</div><small>لوازم دیجیتال</small><h3>شارژر و لوازم جانبی</h3><p>انتخاب شارژر سازگار با دستگاه، توان خروجی و استانداردهای ایمنی اهمیت دارد.</p><span class="soon">لینک خرید پس از اتصال همکاری در فروش</span></article>
+   <article class="card" data-cat="home"><div class="symbol">🏠</div><small>خانه و زندگی</small><h3>وسایل کاربردی خانه</h3><p>ابزارهای کوچک و مفیدی که می‌توانند کارهای روزمره را ساده‌تر کنند.</p><span class="soon">لینک خرید پس از اتصال همکاری در فروش</span></article>
+   <article class="card" data-cat="sport"><div class="symbol">🏃</div><small>ورزش</small><h3>ابزار تمرین در خانه</h3><p>از کش ورزشی تا تجهیزات سبک؛ متناسب با فضای تمرین و سطح آمادگی انتخاب کنید.</p><span class="soon">لینک خرید پس از اتصال همکاری در فروش</span></article>
+   <article class="card" data-cat="care"><div class="symbol">🌿</div><small>مراقبت شخصی</small><h3>محصولات مراقبت شخصی</h3><p>ترکیبات، تاریخ مصرف و اصالت کالا را پیش از انتخاب بررسی کنید.</p><span class="soon">لینک خرید پس از اتصال همکاری در فروش</span></article>
+  </div>
+ </section>
+ <section class="about" id="about"><h2>درباره فانیس</h2><p>فانیس یعنی چراغی برای روشن‌تر شدن مسیر انتخاب. هدف ما معرفی شفاف کالاها و کمک به مقایسه آگاهانه است. ممکن است در آینده بعضی پیوندهای خرید، پیوند همکاری در فروش باشند؛ در این صورت، فانیس می‌تواند از خرید واجد شرایط کمیسیون دریافت کند، بدون هزینه اضافه برای خریدار.</p></section>
+</main>
+<footer>فانیس — انتخاب آگاهانه، خرید مطمئن‌تر</footer>
+<script>
+const search=document.getElementById('search'),cards=[...document.querySelectorAll('.card')],buttons=[...document.querySelectorAll('.chip')];let cat='all';
+function update(){const q=search.value.trim().toLowerCase();cards.forEach(c=>{c.hidden=!((cat==='all'||c.dataset.cat===cat)&&c.innerText.toLowerCase().includes(q))})}
+search.addEventListener('input',update);buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');cat=b.dataset.cat;update()}));
+</script>
+</body></html>
